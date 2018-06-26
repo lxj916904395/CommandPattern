@@ -1,3 +1,4 @@
+
 //
 //  CommandProtocol.h
 //  命令 模式
@@ -9,5 +10,9 @@
 #ifndef CommandProtocol_h
 #define CommandProtocol_h
 
+#import <Foundation/Foundation.h>
 
+@protocol CommandProtocol<NSObject>
+- (void)execute;
+@end
 #endif /* CommandProtocol_h */

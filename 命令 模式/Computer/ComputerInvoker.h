@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ComputerInvoker : NSObject
+#import "StartupCommand.h"
+#import "ShutdownCommand.h"
 
+@interface ComputerInvoker : NSObject
+- (instancetype)initWithStartup:(StartupCommand *)startup shutdown:(ShutdownCommand *)shutdown;
+
+
+- (void)startup;
+- (void)shutdown;
 @end

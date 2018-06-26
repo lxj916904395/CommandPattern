@@ -10,4 +10,8 @@
 
 @interface Computer : NSObject
 
+
+- (void)startup;
+- (void)shutdown;
+
 @end

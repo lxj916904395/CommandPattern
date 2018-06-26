@@ -6,8 +6,13 @@
 //  Copyright © 2018年 zhongding. All rights reserved.
 //
 
-#import "StarupCommand.h"
+#import "StartupCommand.h"
+#pragma mark ***************** 具体命令
 
-@implementation StarupCommand
+@implementation StartupCommand
+
+- (void)startup{
+    [self.computer startup];
+}
 
 @end

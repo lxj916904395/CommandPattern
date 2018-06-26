@@ -8,6 +8,11 @@
 
 #import "ShutdownCommand.h"
 
+#pragma mark ***************** 具体命令
+
 @implementation ShutdownCommand
+- (void)shutdown{
+    [self.computer shutdown];
+}
 
 @end

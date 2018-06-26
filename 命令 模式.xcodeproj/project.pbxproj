@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4D526E2920E1E1530037620B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D526E2820E1E1530037620B /* main.m */; };
+		4D526E3920E1E1EC0037620B /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D526E3820E1E1EC0037620B /* Computer.m */; };
+		4D526E3C20E1E20E0037620B /* SuperCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D526E3B20E1E20E0037620B /* SuperCommand.m */; };
+		4D526E3F20E1E2260037620B /* StartupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D526E3E20E1E2260037620B /* StartupCommand.m */; };
+		4D526E4220E1E23C0037620B /* ShutdownCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D526E4120E1E23C0037620B /* ShutdownCommand.m */; };
+		4D526E4620E1E2A30037620B /* ComputerInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D526E4520E1E2A30037620B /* ComputerInvoker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,17 @@
 /* Begin PBXFileReference section */
 		4D526E2520E1E1530037620B /* 命令 模式 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "命令 模式"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D526E2820E1E1530037620B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D526E3720E1E1EC0037620B /* Computer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Computer.h; sourceTree = "<group>"; };
+		4D526E3820E1E1EC0037620B /* Computer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Computer.m; sourceTree = "<group>"; };
+		4D526E3A20E1E20E0037620B /* SuperCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCommand.h; sourceTree = "<group>"; };
+		4D526E3B20E1E20E0037620B /* SuperCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCommand.m; sourceTree = "<group>"; };
+		4D526E3D20E1E2260037620B /* StartupCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartupCommand.h; sourceTree = "<group>"; };
+		4D526E3E20E1E2260037620B /* StartupCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartupCommand.m; sourceTree = "<group>"; };
+		4D526E4020E1E23C0037620B /* ShutdownCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShutdownCommand.h; sourceTree = "<group>"; };
+		4D526E4120E1E23C0037620B /* ShutdownCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShutdownCommand.m; sourceTree = "<group>"; };
+		4D526E4320E1E2580037620B /* CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandProtocol.h; sourceTree = "<group>"; };
+		4D526E4420E1E2A30037620B /* ComputerInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerInvoker.h; sourceTree = "<group>"; };
+		4D526E4520E1E2A30037620B /* ComputerInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputerInvoker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +73,28 @@
 		4D526E2720E1E1530037620B /* 命令 模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4D526E3620E1E1DD0037620B /* Computer */,
 				4D526E2820E1E1530037620B /* main.m */,
 			);
 			path = "命令 模式";
+			sourceTree = "<group>";
+		};
+		4D526E3620E1E1DD0037620B /* Computer */ = {
+			isa = PBXGroup;
+			children = (
+				4D526E3720E1E1EC0037620B /* Computer.h */,
+				4D526E3820E1E1EC0037620B /* Computer.m */,
+				4D526E3A20E1E20E0037620B /* SuperCommand.h */,
+				4D526E3B20E1E20E0037620B /* SuperCommand.m */,
+				4D526E3D20E1E2260037620B /* StartupCommand.h */,
+				4D526E3E20E1E2260037620B /* StartupCommand.m */,
+				4D526E4020E1E23C0037620B /* ShutdownCommand.h */,
+				4D526E4120E1E23C0037620B /* ShutdownCommand.m */,
+				4D526E4320E1E2580037620B /* CommandProtocol.h */,
+				4D526E4420E1E2A30037620B /* ComputerInvoker.h */,
+				4D526E4520E1E2A30037620B /* ComputerInvoker.m */,
+			);
+			path = Computer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D526E3F20E1E2260037620B /* StartupCommand.m in Sources */,
+				4D526E3920E1E1EC0037620B /* Computer.m in Sources */,
+				4D526E4220E1E23C0037620B /* ShutdownCommand.m in Sources */,
+				4D526E4620E1E2A30037620B /* ComputerInvoker.m in Sources */,
 				4D526E2920E1E1530037620B /* main.m in Sources */,
+				4D526E3C20E1E20E0037620B /* SuperCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

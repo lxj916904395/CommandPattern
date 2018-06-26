@@ -8,6 +8,6 @@
 
 #import "SuperCommand.h"
 
-@interface StarupCommand : SuperCommand
-
+@interface StartupCommand : SuperCommand
+- (void)startup;
 @end

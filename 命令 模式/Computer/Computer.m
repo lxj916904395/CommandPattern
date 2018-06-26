@@ -7,7 +7,16 @@
 //
 
 #import "Computer.h"
+#pragma mark ***************** 接收者
 
 @implementation Computer
+
+- (void)startup{
+    NSLog(@"开机...");
+}
+
+- (void)shutdown{
+    NSLog(@"关机...");
+}
 
 @end

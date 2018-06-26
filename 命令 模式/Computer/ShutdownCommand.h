@@ -9,5 +9,5 @@
 #import "SuperCommand.h"
 
 @interface ShutdownCommand : SuperCommand
-
+- (void)shutdown;
 @end

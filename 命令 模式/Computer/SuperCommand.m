@@ -7,7 +7,17 @@
 //
 
 #import "SuperCommand.h"
-
+//
+@interface SuperCommand()
+@end
 @implementation SuperCommand
+
+- (instancetype)initWithComputer:(Computer *)computer{
+    if (self = [super init]) {
+        self.computer = computer;
+    }
+    return self;
+}
+
 
 @end
