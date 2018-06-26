@@ -41,6 +41,7 @@
 		4D526E4320E1E2580037620B /* CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandProtocol.h; sourceTree = "<group>"; };
 		4D526E4420E1E2A30037620B /* ComputerInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerInvoker.h; sourceTree = "<group>"; };
 		4D526E4520E1E2A30037620B /* ComputerInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputerInvoker.m; sourceTree = "<group>"; };
+		4D526E9120E222130037620B /* text.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		4D526E2720E1E1530037620B /* 命令 模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4D526E9020E222040037620B /* images */,
 				4D526E3620E1E1DD0037620B /* Computer */,
 				4D526E2820E1E1530037620B /* main.m */,
 			);
@@ -95,6 +97,14 @@
 				4D526E4520E1E2A30037620B /* ComputerInvoker.m */,
 			);
 			path = Computer;
+			sourceTree = "<group>";
+		};
+		4D526E9020E222040037620B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4D526E9120E222130037620B /* text.JPG */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
